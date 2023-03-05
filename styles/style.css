@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+
+header nav {
+  width: 100%;
+}
+header nav ul {
+  padding: 2rem;
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  font-size: 1.75rem;
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.left {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+main section.left h1 {
+  font-size: 4rem;
+  color: #e08958;
+}
+main section.left p {
+  font-size: 1.5rem;
+  padding: 1rem 0rem;
+}
+main section.right {
+  flex: 1 1 600px;
+  position: relative;
+}
+main section.right .mypic {
+  position: absolute;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  top: 40vh;
+  right: 25vw;
+}
+main section.table {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+main section.table table {
+  border-collapse: collapse;
+}
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+main section.table table tr:hover {
+  background-color: #fab891;
+}
+main section.table table tr td {
+  padding: 1rem;
+}
+main section.picture {
+  flex: 1 1 600px;
+  position: relative;
+}
+main section.picture img {
+  width: 30vw;
+}
+main section.picture div.orangerect {
+  width: 30vw;
+  height: 100vh;
+  background-color: #e08958;
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+main section.form {
+  flex: 1 1 600px;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+main section.form form div {
+  margin: 0.5rem;
+}
+main section.form form div label {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #e08958;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  width: 90%;
+}
+main section.form form div textarea {
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  background-color: #e08958;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+main section.contact {
+  display: flex;
+  flex: 1 1 500px;
+  padding: 2rem;
+  align-items: center;
+}
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
+}
+
+footer a {
+  padding: 1rem;
+}
+
+.active {
+  color: #e08958;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+  header nav ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+  main section.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.right .mypic {
+    position: static;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.picture img {
+    width: 40vw;
+  }
+  main section.picture div.orangerect {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
